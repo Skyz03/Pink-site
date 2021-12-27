@@ -1,0 +1,51 @@
+.wishpro {
+    padding-top: 60px;
+
+    @include mq("tablet") {
+        padding-top: 75px;
+    }
+
+    &-title-text {
+        width: 93%;
+        max-width: 780px;
+        margin: 0 auto;
+        display: block;
+
+        @include mq("tablet") {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        padding: 60px 0;
+        margin-top: 60px;
+        background-color: $color-light-gray;
+        @include mq("tablet") {
+            padding: 90px 0;
+            margin-top: 80px;
+        }
+        .container {
+            @include mq("phablet", "max") {
+                padding: 0;
+            }
+        }
+    }
+
+    &__img {
+        margin-top: 25px;
+        margin-left: -10px;
+        margin-right: -10px;
+        @include mq("phablet") {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 45px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            @include mq("bootstrap-lg") {
+                max-width: 830px;
+            }
+        }
+    }
+}

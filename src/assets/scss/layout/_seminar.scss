@@ -1,0 +1,67 @@
+.seminar {
+    padding: 90px 0;
+    background-color: $color-light-gray;
+
+    &__wrapper {
+        position: relative;
+        display: inline-block;
+        margin: 50px 25px 30px;
+
+        @include mq("phablet") {
+            margin: 50px 50px 30px;
+        }
+
+        @include mq("tablet") {
+            margin: 0;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+    }
+
+    &__img {
+        img {
+            transition: 0.25s ease-in-out;
+            display: block;
+        }
+    }
+
+    &__date {
+        padding: 15px 0;
+        position: absolute;
+        bottom: 4px;
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: #fff;
+        background-color: rgba(174, 119, 122, 0.5);
+    }
+
+    &__content {
+        margin: 0 25px;
+
+        @include mq("phablet") {
+            margin: 0 40px;
+        }
+
+        @include mq("tablet") {
+            margin: 20px 0 0 0;
+        }
+
+        a {
+            color: #333333;
+            text-decoration: none;
+            letter-spacing: 0.07em;
+            line-height: 1.5;
+        }
+    }
+}
+
+.m-sev {
+    margin: 0;
+
+    @include mq("tablet") {
+        margin-top: 70px;
+    }
+}

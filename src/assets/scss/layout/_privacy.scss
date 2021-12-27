@@ -1,0 +1,128 @@
+.privacy {
+    &__head {
+        padding-top: 40px;
+
+        @include mq("phablet") {
+            padding-top: 85px;
+        }
+    }
+
+    &__list {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    &__order-list {
+        font-weight: 300;
+        list-style: decimal;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    &__ct {
+        padding-left: 13px;
+        padding-right: 13px;
+
+        @include mq("phablet") {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @include mq("tablet") {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        @include mq("desktop") {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+
+    .bg {
+        border-top: 1px solid #cccccc;
+        height: 200px;
+        background-color: #f8f7ee;
+
+        @include mq("tablet") {
+            min-height: 300px;
+        }
+    }
+
+    &__wrapper {
+        max-width: 100%;
+        margin: 0 20px;
+        background-color: #fff;
+        margin-top: -130px;
+
+        @include mq("phablet") {
+            margin: -220px 40px 0;
+        }
+
+        @include mq("tablet") {
+            margin: -200px auto 0;
+            max-width: 691px;
+        }
+
+        @include mq("bootstrap-lg") {
+            max-width: 1000px;
+            margin-top: -209px;
+        }
+    }
+
+    .top {
+        margin-bottom: 30px;
+    }
+
+    .bg-box {
+        position: relative;
+    }
+
+    .prvbrd {
+        position: absolute;
+        left: 10px;
+        top: 0px;
+
+        @include mq("phablet") {
+            left: 30px;
+        }
+
+        @include mq("tablet") {
+            top: 0px;
+            left: 35px;
+        }
+
+        @include mq("desktop") {
+            left: 100px;
+        }
+    }
+
+    .prvct {
+        padding-bottom: 180px;
+
+        @include mq("phablet") {
+            padding-top: 50px;
+        }
+    }
+
+    .prvlist {
+        padding-bottom: 30px;
+    }
+
+    &__date {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__inquiry {
+        border-bottom: 1px solid #333333;
+        text-decoration: none;
+        font-size: 14px;
+        color: #333333;
+        letter-spacing: 0.075em;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

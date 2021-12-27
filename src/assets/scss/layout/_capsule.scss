@@ -1,0 +1,60 @@
+.capsule {
+    background-color: #f8f7ee;
+    padding-top: 60px;
+    padding-bottom: 25px;
+
+    @include mq("tablet") {
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+
+        @include mq("phablet") {
+            padding-top: 60px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        @include mq("tablet") {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+
+    &__col {
+        width: 100%;
+        padding: 0 0 25px;
+
+        @include mq("phablet") {
+            width: calc(100% / 2);
+            padding: 0 10px 47px;
+        }
+
+        @include mq("tablet") {
+            width: calc(100% / 3);
+            padding: 0 15px 55px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+
+            @include mq("phablet", "max") {
+                max-width: 235px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__content {
+        padding-top: 25px;
+    }
+
+    .heading-desc {
+        text-align: left;
+    }
+}

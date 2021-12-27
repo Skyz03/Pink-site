@@ -1,0 +1,130 @@
+.company {
+    .bg {
+        min-height: 200px;
+        background-color: #f8f7ee;
+        border-top: 1px solid #cccccc;
+
+        @include mq("tablet") {
+            min-height: 300px;
+        }
+    }
+
+    .bg-box {
+        position: relative;
+    }
+    .compbrd {
+        position: absolute;
+        left: 20px;
+        top: 0px;
+
+        @include mq("phablet") {
+            top: 0px;
+            left: 30px;
+        }
+
+        @include mq("tablet") {
+            top: 0px;
+            left: 30px;
+        }
+
+        @include mq("desktop") {
+            left: 100px;
+        }
+    }
+
+    &__wrapper {
+        max-width: 100%;
+        margin: 0 20px;
+        background-color: #fff;
+        margin-top: -130px;
+
+        @include mq("phablet") {
+            margin: -130px 40px 0;
+        }
+
+        @include mq("tablet") {
+            margin: -200px auto 0;
+            max-width: 691px;
+        }
+
+        @include mq("bootstrap-lg") {
+            max-width: 1000px;
+        }
+    }
+
+    &__head {
+        padding-top: 40px;
+
+        @include mq("tablet") {
+            padding-top: 100px;
+        }
+    }
+    &__replace {
+        &--image {
+            padding: 40px 0 100px;
+            max-width: 311px;
+            margin: 0 auto;
+            @include mq("phablet") {
+                max-width: 800px;
+            }
+            @include mq("tablet") {
+                padding: 60px 0 180px;
+                display: block;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__tbl {
+        font-size: 14px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        @include mq("tablet") {
+            margin-top: 60px;
+        }
+        td {
+            padding: 11px 5px;
+            @include mq("tablet") {
+                min-height: 65px;
+                text-align: center;
+                padding: 15px 20px;
+            }
+        }
+    }
+
+    &__row {
+        border-bottom: 1px solid #cccccc;
+        display: flex;
+        align-items: center;
+    }
+
+    &__row:first-child {
+        border-top: 1px solid #cccccc;
+    }
+
+    &__left {
+        width: 92px;
+        @include mq("tablet") {
+            width: 200px;
+        }
+
+        .heading-desc.-pono {
+            text-align: center;
+        }
+    }
+
+    &__right {
+        width: 217px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #cccccc;
+        @include mq("phablet") {
+            width: 400px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: $color-white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #b5b5b5;
+    transition: all 0.35s ease-in-out;
+    &.shown {
+        opacity: 1;
+        display: flex;
+        transition: 0.3s all ease-in-out;
+    }
+
+    &:hover {
+        @include mq("tablet") {
+            background: rgba($color-white, 0.5);
+        }
+    }
+
+    @include mq("tablet") {
+        height: 50px;
+        width: 50px;
+        right: 50px;
+        bottom: 15px;
+        position: fixed;
+    }
+
+    img {
+        height: 10px;
+        width: 20px;
+
+        @include mq("tablet") {
+            height: 12px;
+            width: 24px;
+        }
+    }
+}
+
+.scroll-show {
+    bottom: 190px;
+
+    @include mq("tablet") {
+        height: 50px;
+        width: 50px;
+        right: 50px;
+        bottom: 200px;
+    }
+}

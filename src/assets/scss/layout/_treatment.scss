@@ -1,0 +1,44 @@
+.treatment {
+    padding: 90px 0;
+    font-family: $font-secondary;
+    font-weight: 300;
+    background-image: url("../img/treatment/treatment-bg-sp.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq("tablet") {
+        background-image: url("../img/treatment/treatment-bg.png");
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+    &__wrapper {
+        padding: 60px 0 0 0;
+    }
+
+    &__text {
+        text-align: center;
+
+        @include mq("tablet") {
+            max-width: 370px;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: left;
+            letter-spacing: 0.075em;
+            line-height: 1.5;
+            color: #333333;
+        }
+    }
+
+    &__text:last-child {
+        margin-top: 90px;
+    }
+
+    .pd-five {
+        margin-top: 50px;
+        font-size: 16px;
+        letter-spacing: 0.075em;
+    }
+}

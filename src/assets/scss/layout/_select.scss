@@ -1,0 +1,83 @@
+.custom-select {
+    position: relative;
+    padding: 0;
+    border: none;
+    height: auto;
+    font-family: $font-secondary;
+    font-size: 15px;
+    max-width: 100% !important;
+
+    @include mq("phablet") {
+        max-width: 288px !important;
+    }
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: #aeada3;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    background-image: url(.././img/concerned/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    transform: rotate(-90deg);
+    top: 10px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 25px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: #aeada3;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(214, 127, 140, 1);
+    position: relative;
+}
+
+.same-as-selected::before {
+    content: "";
+    background-image: url(.././img/check_icon.png);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 39%;
+    left: 2%;
+    background-repeat: no-repeat;
+}

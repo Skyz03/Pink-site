@@ -1,0 +1,49 @@
+.footer {
+    font-family: $font-secondary;
+    font-weight: 300;
+    background: $color-primary;
+    color: $color-white;
+
+    @include mq("phablet") {
+        margin-bottom: 0;
+    }
+
+    &__copyright {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        padding: 15px 0;
+        @include mq("tablet") {
+            padding: 50px 0;
+        }
+    }
+    &__link {
+        display: none;
+
+        @include mq("tablet") {
+            display: inline-block;
+            padding-top: 15px;
+            text-decoration: none;
+            color: $color-white;
+            margin-right: 15px;
+        }
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__text {
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 0;
+
+        @include mq("tablet") {
+            margin-top: 40px;
+            text-align: left;
+        }
+    }
+}

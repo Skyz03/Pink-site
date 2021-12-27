@@ -1,0 +1,54 @@
+.concerned {
+    margin-top: 55px;
+
+    margin-bottom: 120px;
+    @include mq("phablet") {
+        margin: 100px 10px 180px;
+    }
+    &__banner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__heading-txt {
+        font-family: $font-secondary;
+        font-weight: 300;
+        font-size: 14px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        white-space: nowrap;
+
+        @include mq("phablet") {
+            font-size: 14px;
+        }
+
+        @include mq("tablet") {
+            font-size: 16px;
+        }
+        @include mq("bootstrap-lg") {
+            font-size: 18px;
+        }
+    }
+
+    &__txt {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        border-bottom: solid 1px #aeaeae;
+        margin-bottom: 50px;
+
+        @include mq("phablet") {
+            margin-bottom: 80px;
+        }
+    }
+}

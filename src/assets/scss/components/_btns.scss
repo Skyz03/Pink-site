@@ -1,0 +1,101 @@
+.btn-red {
+    font-family: $font-secondary;
+    font-weight: 300;
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    padding: 12px 23px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    &--lg {
+        max-width: 300px;
+        width: 100%;
+        padding: 15px 23px;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: "";
+            background-image: url(../img/concerned/arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 8px;
+            height: 13px;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @include mq("phablet") {
+            max-width: 580px;
+            width: 100%;
+        }
+    }
+
+    &--md {
+        max-width: 300px;
+        width: 100%;
+        position: relative;
+        font-size: 16px;
+        padding: 20px 0;
+
+        @include mq("phablet") {
+            max-width: 435px;
+            width: 100%;
+        }
+
+        @include mq("tablet") {
+            max-width: 300px;
+        }
+        &.-handtherapith {
+            font-size: 14px;
+            text-align: center;
+            background-color: #d78b92;
+            @include mq("phablet") {
+                width: 580px;
+                height: 65px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-pos {
+    max-width: 262px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 12%;
+    margin-bottom: 20px;
+
+    @include mq("phablet") {
+        left: 26%;
+    }
+}
+
+.btn-back {
+    background-color: #aeada3;
+}
+
+.contact-confirmation {
+    .btn-red--md {
+        &:after {
+            position: absolute;
+            content: "";
+            background-image: url(../img/concerned/arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 8px;
+            height: 13px;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

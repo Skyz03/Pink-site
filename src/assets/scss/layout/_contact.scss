@@ -1,0 +1,416 @@
+.bg {
+    min-height: 200px;
+    background-color: #f8f7ee;
+    border-top: 1px solid #cccccc;
+
+    @include mq("phablet") {
+        min-height: 300px;
+    }
+
+    &-box {
+        position: relative;
+    }
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact--ttl {
+    margin-top: 73px;
+}
+
+.contact__list {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+    @include mq("tablet") {
+        top: 0px;
+        left: 30px;
+    }
+
+    @include mq("desktop") {
+        left: 100px;
+        top: 0;
+    }
+}
+
+.contact__list-u {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+
+    @include mq("tablet") {
+        top: 0px;
+        left: 100px;
+    }
+}
+
+.contact__wrapper {
+    max-width: 100%;
+    margin: 0 20px;
+    background-color: #fff;
+    margin-top: -130px;
+
+    @include mq("phablet") {
+        margin: -220px 40px 0;
+    }
+
+    @include mq("tablet") {
+        margin: -200px auto 0;
+        max-width: 691px;
+    }
+
+    @include mq("bootstrap-lg") {
+        max-width: 900px;
+        margin-top: -218px;
+    }
+
+    @include mq("desktop") {
+        max-width: 1000px;
+    }
+}
+
+.contact {
+    .container {
+        padding: 0 !important;
+    }
+}
+
+.form {
+    font-family: $font-secondary;
+    &-group {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 12px;
+        margin-bottom: 18px;
+        flex-direction: column;
+
+        @include mq("phablet") {
+            flex-direction: row;
+            margin-bottom: 30px;
+        }
+
+        &:not(.-nobar) {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    &-group:last-child {
+        align-items: flex-start;
+    }
+
+    &-label {
+        font-weight: 300;
+        display: flex;
+        max-width: 60%;
+        flex-basis: 60%;
+        padding-left: 0px;
+        padding-top: 11px;
+        color: #636363;
+        padding-bottom: 13px;
+
+        @include mq("phablet") {
+            padding-left: 15px;
+            padding-bottom: 0;
+            max-width: 40%;
+            flex-basis: 40%;
+        }
+        @include mq("tablet") {
+            padding-left: 30px;
+            max-width: 32%;
+            flex-basis: 32%;
+            padding-top: 7px;
+        }
+
+        &--sy {
+            color: #d67f8c;
+            font-size: 10px;
+        }
+    }
+
+    &-control {
+        max-width: 100%;
+        flex-basis: 80%;
+        min-height: 40px;
+        font-size: 15px;
+        border-radius: 0;
+
+        @include mq("phablet") {
+            max-width: 56%;
+        }
+
+        @include mq("tablet") {
+            max-width: 63%;
+        }
+        @include mq("bootstrap-lg") {
+            max-width: 39%;
+        }
+    }
+
+    &-arrow {
+        @include mq("tablet") {
+            max-width: 300px;
+            margin: 0;
+            width: 100%;
+            position: relative;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(.././img/concerned/arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 8px;
+            height: 11px;
+            right: 32px;
+            top: 44%;
+            transform: translateY(-50%);
+            pointer-events: none;
+
+            @include mq("tablet") {
+                right: 20px;
+            }
+        }
+    }
+
+    &-left {
+        max-width: 300px;
+        width: 100%;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(.././img/arrow-left.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 10px;
+            left: 32px;
+            top: 44%;
+            transform: translateY(-50%);
+            pointer-events: none;
+
+            @include mq("tablet") {
+                left: 20px;
+            }
+        }
+    }
+
+    &-text {
+        font-weight: 300;
+        display: flex;
+        justify-content: flex-start;
+        padding: 31px 0 13px;
+        color: #636363;
+
+        @include mq("phablet") {
+            padding: 66px 0 60px;
+            justify-content: center;
+        }
+    }
+
+    &-submit {
+        max-width: 300px;
+        padding-top: 30px;
+        padding-bottom: 120px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq("phablet") {
+            right: 0px;
+            top: 24%;
+        }
+
+        @include mq("bootstrap-lg") {
+            padding-bottom: 180px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(.././img/concerned/arrow.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 8px;
+            height: 11px;
+            right: 20px;
+            top: 29%;
+            transform: translateY(-50%);
+
+            @include mq("phablet") {
+                top: 29%;
+            }
+            @include mq("tablet") {
+                top: 29%;
+            }
+            @include mq("bootstrap-lg") {
+                top: 22.5%;
+            }
+            @include mq("desktop") {
+                top: 22.5%;
+            }
+        }
+    }
+
+    &-group {
+        padding-bottom: 25px !important;
+    }
+
+    &-sended {
+        height: 100%;
+        padding-bottom: 70px;
+
+        @include mq("tablet") {
+            padding-bottom: 100px;
+        }
+        @include mq("desktop") {
+            padding-bottom: 130px;
+        }
+    }
+}
+
+.is-active {
+    font-family: $font-secondary;
+    margin-left: 0;
+    color: #d67f8c;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 300;
+
+    @include mq("phablet") {
+        margin-left: 40%;
+    }
+
+    @include mq("tablet") {
+        margin-left: 32%;
+    }
+}
+
+.textarea {
+    min-height: 200px;
+    max-width: 100%;
+    resize: none;
+
+    @include mq("phablet") {
+        max-width: 56%;
+        flex-basis: 56%;
+    }
+}
+
+.contact-confirmation {
+    .contact-form {
+        margin-top: 45px;
+        font-family: $font-secondary;
+
+        @include mq("tablet") {
+            margin-top: 80px;
+            font-size: 14px;
+        }
+    }
+    .form-control {
+        border: none;
+        flex-basis: 100%;
+
+        @include mq("tablet") {
+            max-width: 63%;
+        }
+    }
+
+    .form-label {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-left: 0;
+
+        @include mq("phablet") {
+            max-width: 32%;
+            flex-basis: 32%;
+        }
+
+        @include mq("bootstrap-lg") {
+            justify-content: none;
+        }
+    }
+
+    .inquiry-form__value {
+        height: 100%;
+        padding-left: 13px;
+
+        @include mq("bootstrap-lg") {
+            padding-left: 0;
+        }
+    }
+
+    .form-left {
+        width: calc(50% - 6px);
+        margin-right: 6px;
+
+        @include mq("tablet") {
+            max-width: 300px;
+        }
+    }
+
+    .form-arrow {
+        width: calc(50% - 6px);
+        position: relative;
+        margin-left: 6px;
+
+        @include mq("tablet") {
+            max-width: 300px;
+        }
+    }
+
+    .form-group {
+        &:nth-last-child(2) {
+            border-bottom: 0;
+        }
+        p {
+            &:last-child {
+                @include mq("tablet") {
+                    flex-basis: 100%;
+                }
+
+                @include mq("bootstrap-lg") {
+                    max-width: 480px;
+                    letter-spacing: 0.075em;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .confirmation-btns {
+        margin-bottom: 100px !important;
+        margin-top: 30px;
+
+        @include mq("tablet") {
+            margin-bottom: 125px !important;
+            margin-top: 57px;
+        }
+
+        @include mq("desktop") {
+            margin-bottom: 150px !important;
+            margin-top: 85px;
+        }
+    }
+}
+
+.err {
+    color: #d67f8c;
+}
+.form-sended__text {
+    font-family: $font-secondary;
+    text-align: left;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.7;
+
+    @include mq("tablet") {
+        text-align: center;
+    }
+}

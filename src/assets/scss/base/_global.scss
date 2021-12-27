@@ -1,0 +1,64 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-black;
+    line-height: 1.2;
+    background: $color-white;
+
+    &.overflow {
+        overflow: hidden;
+    }
+
+    @include mq("tablet") {
+        &.overflow {
+            overflow: auto;
+        }
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+.container {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+
+    @include mq("phablet") {
+        padding: 0 15px;
+    }
+
+    @include mq("bootstrap-lg") {
+        max-width: 1030px;
+        padding: 0 15px;
+        margin-top: -10px;
+    }
+
+    &.-lg {
+        @include mq("bootstrap-lg") {
+            max-width: 1230px;
+            padding: 0 15px;
+        }
+    }
+    &.-handtherapith {
+        padding: 0 0;
+    }
+}
+
+%reset-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

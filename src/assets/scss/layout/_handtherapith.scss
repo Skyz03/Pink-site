@@ -1,0 +1,42 @@
+.handtherapith {
+    margin-bottom: 120px;
+    @include mq("phablet") {
+        margin-bottom: 180px;
+    }
+    &__heading {
+        margin-top: 70px;
+    }
+    &__wrapper {
+        text-align: left;
+        padding-left: 15px;
+        @include mq("phablet") {
+        }
+        @include mq("tablet") {
+        }
+        @include mq("bootstrap-lg") {
+            max-width: 1400px;
+            padding: 0 100px;
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+    &__content {
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-top: 30px;
+        padding-bottom: 59px;
+
+        @include mq("phablet") {
+            padding-top: 60px;
+            padding-bottom: 55px;
+        }
+    }
+}
+
+.hand-btn {
+    padding: 22.5px;
+    height: auto !important;
+}

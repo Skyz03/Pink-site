@@ -1,0 +1,261 @@
+.heading {
+    &-ttl {
+        text-align: center;
+        position: relative;
+        padding-bottom: 17.5px;
+        @include mq("table") {
+            padding-bottom: 25px;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            background-color: #cccccc;
+            max-width: 132px;
+            width: 100%;
+            height: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            @include mq("phablet") {
+                max-width: 264px;
+            }
+        }
+        span {
+            display: block;
+            color: #636363;
+            font-weight: 300;
+        }
+    }
+
+    &-en {
+        font-size: 3.5rem;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        padding-bottom: 13px;
+
+        @include mq("phablet") {
+            font-size: 4rem;
+        }
+
+        @include mq("tablet") {
+            font-size: 4.5rem;
+        }
+
+        @include mq("bootstrap-lg") {
+            font-size: 5rem;
+        }
+
+        @include mq("desktop") {
+            font-size: 5.5rem;
+        }
+    }
+
+    &-jp {
+        font-size: 1.4rem;
+        font-weight: 300;
+        font-family: $font-secondary;
+
+        letter-spacing: 0.075em;
+
+        @include mq("phablet") {
+            font-size: 1.5rem;
+            padding-bottom: 15px;
+        }
+
+        @include mq("tablet") {
+            font-size: 1.6rem;
+        }
+
+        @include mq("bootstrap-lg") {
+            font-size: 1.7rem;
+        }
+
+        @include mq("desktop") {
+            font-size: 1.8rem;
+        }
+    }
+
+    &-desc {
+        font-size: 1.4rem;
+        font-weight: 300;
+        font-family: $font-secondary;
+        color: #333333;
+
+        text-align: left;
+        line-height: 1.8;
+        @include mq("phablet") {
+            /*   font-size: 1.5rem; */
+            font-size: 14px;
+            line-height: 1.8;
+            letter-spacing: 0.075em;
+        }
+        @include mq("phablet", "max") {
+            font-size: 14px;
+        }
+
+        @include mq("tablet") {
+            letter-spacing: 0.075em;
+        }
+        &.-pono {
+            font-size: 14px;
+            line-height: 1.9;
+            letter-spacing: 0.043em;
+            text-align: justify;
+            &.--pononame {
+                text-align: center;
+            }
+            @include mq("phablet") {
+                font-size: 15px;
+            }
+        }
+        &.-handtherapith {
+            @include mq("phablet") {
+                text-indent: 15px;
+                text-align: center;
+            }
+        }
+        &.-last {
+            @include mq("phablet") {
+                text-align: center;
+            }
+        }
+        &.-prvhd {
+            font-size: 14px;
+            font-weight: 700;
+            @include mq("phablet") {
+                font-size: 15px;
+            }
+            &.-gap {
+                padding-left: 15px;
+                @include mq("phablet") {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        &--ct {
+            text-align: left;
+            margin-bottom: 25px;
+            margin-top: 50px;
+            font-weight: 300;
+            @include mq("phablet") {
+                text-align: center;
+                margin-top: 82px;
+            }
+        }
+
+        &.-fw {
+            font-weight: 500;
+            line-height: 1.9;
+            @include mq("phablet") {
+                letter-spacing: 0.075em;
+            }
+        }
+        &.-pt {
+            padding-top: 25px;
+            text-align: left;
+            color: #333;
+            font-weight: 300;
+            letter-spacing: 0.14em;
+            @include mq("phablet") {
+                padding-top: 53px;
+                // letter-spacing: 0.075em;
+            }
+            @include mq("tablet") {
+                text-align: center;
+            }
+        }
+    }
+
+    &-sec {
+        font-size: 1.5rem;
+        color: $color-green;
+        text-align: center;
+        font-weight: 500;
+        @include mq("phablet") {
+            font-size: 2rem;
+        }
+        @include mq("tablet") {
+            font-size: 2.5rem;
+        }
+        @include mq("bootstrap-lg") {
+            font-size: 3rem;
+        }
+        @include mq("desktop") {
+            font-size: 3.5rem;
+        }
+        .lg {
+            font-size: 2.8rem;
+            @include mq("phablet") {
+                font-size: 3.5rem;
+            }
+            @include mq("tablet") {
+                font-size: 4.5rem;
+            }
+            @include mq("bootstrap-lg") {
+                font-size: 5.5rem;
+            }
+            @include mq("desktop") {
+                font-size: 6.5rem;
+            }
+        }
+
+        .md {
+            font-size: 2.5rem;
+            @include mq("phablet") {
+                font-size: 3rem;
+            }
+            @include mq("tablet") {
+                font-size: 3.5rem;
+            }
+            @include mq("bootstrap-lg") {
+                font-size: 4.5rem;
+            }
+            @include mq("desktop") {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    &-small {
+        font-family: $font-third;
+        text-align: center;
+        position: relative;
+        padding-bottom: 15px;
+        color: #acacac;
+
+        @include mq("table") {
+            padding-bottom: 25px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &-one {
+        font-family: $font-third;
+        font-weight: 600;
+        font-size: 4rem;
+        letter-spacing: 0.05em;
+
+        &.-up {
+            text-transform: uppercase;
+        }
+    }
+
+    &-two {
+        font-family: $font-secondary;
+        font-weight: 300;
+        letter-spacing: 0.075em;
+        margin-top: 10px;
+    }
+}
+
+.ls {
+    letter-spacing: 0;
+
+    @include mq("phablet") {
+        letter-spacing: 0.075em;
+    }
+}

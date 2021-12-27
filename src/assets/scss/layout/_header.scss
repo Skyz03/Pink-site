@@ -1,0 +1,164 @@
+.header {
+    padding: 15px 0;
+
+    @include mq("tablet") {
+        padding: 0;
+    }
+
+    @include mq("bootstrap-lg") {
+        padding: 0;
+    }
+
+    @include mq("desktop") {
+        margin-top: 0px;
+    }
+
+    .container {
+        @include mq("tablet") {
+            overflow: visible;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__img-wrapper {
+        padding-bottom: 0;
+
+        @include mq("tablet") {
+            padding: 50px 0 15px;
+        }
+    }
+
+    &__top {
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        // padding-top: 50px;
+    }
+
+    &__button {
+        display: none;
+
+        &.-sp-only {
+            display: block;
+
+            @include mq("tablet") {
+                display: none;
+            }
+        }
+
+        @include mq("tablet") {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            right: 1%;
+            top: 5%;
+        }
+
+        @include mq("bootstrap-lg") {
+            top: 25%;
+        }
+    }
+
+    &__bottom {
+        background-color: #fff;
+        z-index: 99;
+
+        // display: none;
+        @include mq("tablet", "max") {
+            position: absolute;
+            top: 70px;
+            right: 0;
+            width: 100vw;
+            max-width: 100vw;
+            transition: 0.25s all ease-out;
+            opacity: 0;
+            visibility: hidden;
+            overflow: auto;
+            background-color: $white;
+            > * {
+                transform: translateX(100%);
+                transition: 0.25s transform ease-out;
+            }
+        }
+
+        @include mq("tablet") {
+            display: flex;
+            justify-content: center;
+            padding: 25px 0 20px;
+        }
+
+        &.fixed {
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        &.shown {
+            max-width: 100vw;
+            width: 100vw;
+            transition: 0.25s all ease-out;
+            opacity: 1 !important;
+            visibility: visible;
+            height: 100vh;
+
+            > * {
+                transform: translateX(0);
+                transition: 0.25s transform ease-out;
+            }
+            @include mq("tablet") {
+                max-height: 100vh;
+                overflow: visible;
+                max-width: 100vw;
+                width: 100%;
+                height: 0;
+            }
+        }
+    }
+
+    &__flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    &__logo {
+        width: 130px;
+        display: block;
+        margin: 0 auto;
+
+        @include mq("tablet") {
+            width: 130px;
+        }
+
+        @include mq("bootstrap-lg") {
+            width: 100px;
+        }
+    }
+
+    &__btn-group {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+
+        @include mq("tablet") {
+            display: flex;
+            margin-top: 0;
+            margin-left: 15px;
+            align-items: center;
+        }
+    }
+}
+
+.bl-inline {
+    display: inline-block;
+    width: 100%;
+}

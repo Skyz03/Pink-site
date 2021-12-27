@@ -1,0 +1,49 @@
+.technology {
+    padding-top: 60px;
+    margin-bottom: 10px;
+    &__inner {
+        border-bottom: solid 1px #cccccc;
+    }
+    @include mq("phablet") {
+        padding-top: 90px;
+        padding-bottom: 120px;
+    }
+    @include mq("bootstrap-lg") {
+        padding-top: 90px;
+        padding-bottom: 25px;
+    }
+
+    .heading-desc {
+        text-align: left;
+    }
+
+    &__list {
+        padding-top: 30px;
+    }
+    &__img {
+        img {
+            @include mq("phablet", "max") {
+                max-width: 184px;
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .tecimg {
+        height: 176px;
+        margin-bottom: 30px;
+
+        @include mq("phablet") {
+            height: auto;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        @include mq("tablet") {
+        }
+        @include mq("bootstrap-lg") {
+            height: 315px;
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.social {
+    margin-top: 0px;
+    @include mq("tablet") {
+        margin-top: 90px;
+    }
+
+    &__wrapper {
+        padding-bottom: 90px;
+        border-bottom: 1px solid #cccccc;
+    }
+    &__instagram {
+        margin-top: 60px;
+        text-align: center;
+
+        @include mq("tablet") {
+            margin: 0;
+        }
+    }
+
+    &__line {
+        text-align: center;
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+        @include mq("tablet") {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__images > row > div {
+        margin: 0 15px 0 0;
+    }
+
+    &__images {
+        .row {
+            & > [class^="col"] {
+                @include mq("phablet", "max") {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    &__image {
+        padding-bottom: 60px;
+        border-bottom: 1px solid #cccccc;
+        border-right: none;
+
+        @include mq("phablet") {
+            border-bottom: none;
+            border-right: 1px solid #cccccc;
+            margin: 0;
+        }
+    }
+}
+
+.insta-img {
+    width: 140px;
+    height: 140px;
+
+    @include mq("bootstrap-lg") {
+        height: 200px;
+        width: 200px;
+        margin: 0;
+    }
+}
+
+.gap-10 {
+    gap: 10px;
+}
