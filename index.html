@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Google Tag Manager -->
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <title>PONO</title>
+    <link rel="canonical" href="">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="144x144" href="@@webRoot/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="@@webRoot/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="@@webRoot/favicon-16x16.png">
+    <link rel="manifest" href="@@webRoot/site.webmanifest">
+    <link rel="mask-icon" href="@@webRoot/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- app.css -->
+    <link rel="stylesheet" href="./assets/css/app.css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Noto+Sans+JP:wght@300;400;500&family=Source+Sans+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- ogp -->
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="fb:app_id" content="@">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- HEADER  -->
+    <header class="header" id="header">
+        <div class="header__top" id="header-top">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__img-wrapper">
+                        <a href="@@webRoot/" class="header__logo">
+                            <img src="./src/assets/img/logo.png" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header__button">
+                        <ul class="nav">
+                            <li class="nav__items">
+                                <a target="_blank" href="#">新規会員登録</a>
+                            </li>
+                            <li class="nav__items">
+                                <a target="_blank" href="#">ログイン</a>
+                            </li>
+                            <li class="nav__items">
+                                <a target="_blank" href="#">Web予約</a>
+                            </li>
+                        </ul>
+
+                        <a href="#" class="btn-red mt-4">
+                            導入をお考えの方
+                        </a>
+                    </div>
+                </div>
+                <!-- hamburder menu -->
+                <a href="#" class="nav-icon d-md-none" id="js-navIcon">
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="header__bottom" id="header__bottom">
+            <div class="container">
+                <div class="header__button -sp-only">
+                    <ul class="nav">
+                        <li class="nav__items">
+                            <a href="#">新規会員登録</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#">ログイン</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#">Web予約</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="btn-red btn-pos">
+                        導入をお考えの方
+                    </a>
+                </div>
+                <ul class="nav-second">
+                    <li class="nav-second__item">
+                        <a href="@@webRoot/pono/" class="dropdown">Pono</a>
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="#" class="dropdown">News</a>
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="@@webRoot/wishpro/" class="dropdown">Wishpro</a>
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="@@webRoot/handtherapith/" class="dropdown">Hand therapith</a>
+                    </li>
+                    <li class="nav-second__item" id="item">
+                        <a href="#" class="dropdown ">Items </a>
+
+                        <!-- <div class="panel">
+              <a href="#" class="">Wishpro</a>
+              <a href="#" class="">MORE COSMETICS</a>
+              <a href="#" class="">KYB</a>
+            </div> -->
+
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="#" class="dropdown">Seminar</a>
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="#" class="dropdown">Treatment</a>
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="#" class="dropdown">Customer's Voice</a>
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="#access" class="dropdown">Access</a>
+                    </li>
+                    <li class="nav-second__item">
+                        <a href="@@webRoot/contact/" class="dropdown">Contact</a>
+                    </li>
+
+                    <ul class="dropdown-item">
+                        <li><a href="#">
+                                <div class="dropdown__img">
+                                    <img src="./src/assets/img/dropdown/dropdown-1.jpg" alt="Wishpro" width="100"
+                                        height="100" class="img-fluid">
+                                </div>
+                                <p class="dropdown__ttl">Wishpro</p>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="dropdown__img">
+                                    <img src="./src/assets/img/dropdown/dropdown-2.jpg" alt="MORE COSMETICS" width="100"
+                                        height="100" class="img-fluid">
+                                </div>
+                                <p class="dropdown__ttl">MORE <br>COSMETICS</p>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="dropdown__img">
+                                    <img src="./src/assets/img/dropdown/dropdown-2.jpg" alt="KYB" width="100"
+                                        height="100" class="img-fluid">
+                                </div>
+                                <p class="dropdown__ttl">KYB</p>
+                            </a></li>
+                    </ul>
+                </ul>
+                <ul class="nav-second dis-none">
+                    <li class="nav-second__item">
+                        <a class="dropdown" href="#">プライバシーポリシー</a>
+                    </li>
+                    <li class="nav-second__item b-bottom">
+                        <a class="dropdown" href="#">運営会社 </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- @@if(name === 'html') {
+                    @@include('./nav.html')
+                    } -->
+        </div>
+    </header>
+    <!-- HERO -->
+    <div class="hero">
+        <div class="hero__box">
+            <picture class="hero__details">
+                <source media="(max-width: 767px)" srcset="@@webRoot/assets/img/hero/hero-banner-sp.png" alt="spa-img">
+                <img src="./src/assets/img/hero/hero-banner-pc.png" alt="spa-img" loading="lazy" class="img-fluid"
+                    width="1400" height="950">
+            </picture>
+        </div>
+    </div>
+    <!-- MAIN  -->
+    <main id="main">
+
+        <!-- SECTION-CONTENT -->
+        <section class="content">
+            <div class="container">
+                <div class="content__images">
+                    <div class="content__img">
+
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="@@webRoot/assets/img/content/content-img1-sp.png"
+                                alt="wishpro-img">
+                            <img class="img-fluid" src="./src/assets/img/content/content-img1-pc.png" alt="wishpro-img"
+                                height="250" width="1000" loading="lazy">
+                        </picture>
+
+                        <div class="content__text">
+                            <h1 class="title">Wishpro</h1>
+                            <p class="description">4つのテクノロジーヘッドと <br> 美容液カプセルで悩めるお肌にアプローチ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex content__wrapper">
+                    <div class="content__img">
+
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="@@webRoot/assets/img/content/content-img2-sp.png"
+                                alt="wishpro-img">
+                            <img class="img-fluid" src="./src/assets/img/content/content-img2-pc.png" alt="wishpro-img"
+                                height="250" width="1000" loading="lazy">
+                        </picture>
+
+                        <div class="content__text -pos">
+                            <h1 class="title -font "> <span class="fos">MORE</span> <br class="d-none d-sm-block">
+                                COSMETICS
+                            </h1>
+                        </div>
+                    </div>
+
+                    <div class="content__img">
+
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="@@webRoot/assets/img/content/content-img3-sp.png"
+                                alt="wishpro-img">
+                            <img class="img-fluid" src="./src/assets/img/content/content-img3-pc.png" alt="wishpro-img"
+                                height="250" width="1000" loading="lazy">
+                        </picture>
+
+                        <div class="content__text -pos-two">
+                            <h1 class="title -font-two">KYB</h1>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION BANNER -->
+        <section class="poster">
+            <div class="container">
+                <div class="poster__wrapper">
+                    <div class="poster__text">
+                        <div class="poster__title">
+                            <h2> カラダと心が整う <br>ちょう どいいをご提案</h2>
+                        </div>
+
+                        <div class="poster__description">
+                            <p> ポノでは、お一人お一人のちょうどいい調和のとれた状態を目指します。<br>
+                                ナチュラルなものを使い実感出来ることも大事だと考えていて、
+                                お悩みを繰り返さず自分で整う事の出来るよう、優しすぎず心に寄り添う提案を心がけていきます。
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="poster__img">
+                        <picture>
+                            <source media="(max-width: 575px)" srcset="@@webRoot/assets/img/banner/banner-img2-sp.png"
+                                alt="banner-img">
+                            <img src="./src/assets/img/banner/banner-img2-pc.png" alt="banner-img" class="img-fluid"
+                                loading="lazy" height="475" width="1350">
+                        </picture>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section Treatment  -->
+        <section class="treatment">
+            <div class="container">
+                <h2 class="heading-ttl">
+                    <span class="heading-en">Treatment</span>
+                    <span class="heading-jp">施 術</span>
+                </h2>
+
+                <div class="row treatment__wrapper">
+                    <div class="col-md-6">
+                        <div class="treatment__img mb-5 mb-md-0">
+                            <img src="./src/assets/img/treatment/treatment-img1.png" alt="treatment-img"
+                                class="img-fluid" loading="lazy" height="664" width="490">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="treatment__text">
+                            <p>
+                                Wishproを使った施術になります。<br>
+                                お肌のお悩みに合わせ、5種類のトリートメントカプセルから優しくお肌へアプローチします。
+                                初回の施術、15分間で効果を実感できます。
+                            </p>
+
+                            <button class="btn-red btn-red--lg pd-five">
+                                Wishpro
+                            </button>
+                        </div>
+
+
+                        <div class="treatment__text">
+                            <p>
+                                ハンドセラピスはオールハンドによる施術法です。
+                                特殊な機器から流れる微弱電流を、セラピストを介してお客様に届けます。
+                                <br>
+                                セラピストの手から伝わる微弱電流で、極上の癒しをご体験ください。
+                            </p>
+
+                            <button class="btn-red btn-red--lg pd-five mb-5 mb-md-0">
+                                ハンドセラピス
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="seminar">
+            <div class="container">
+                <h2 class="heading-ttl">
+                    <span class="heading-en">Seminar</span>
+                    <span class="heading-jp">セミナー</span>
+                </h2>
+
+                <div class="row m-sev">
+                    <!-- First Col -->
+
+                    <div class="col-md-4">
+                        <div class="seminar__wrapper">
+                            <a href="#" class="seminar__img">
+                                <img src="./src/assets/img/seminar/seminar-img1.png" alt="treatment-img"
+                                    class="img-fluid" loading="lazy" height="664" width="490">
+                            </a>
+
+                            <div class="seminar__date">
+                                <p>2021/12/30</p>
+                            </div>
+                        </div>
+
+                        <div class="seminar__content">
+                            <a href="#"> 【講師主催】ハンドセラピス体験セミナー（沖縄/那覇市）</a>
+                        </div>
+                    </div>
+
+                    <!-- Second Col -->
+                    <div class="col-md-4">
+                        <div class="seminar__wrapper">
+                            <a class="seminar__img" href="#">
+                                <img src="./src/assets/img/seminar/seminar-img2.png" alt="treatment-img"
+                                    class="img-fluid" loading="lazy" height="664" width="490">
+                            </a>
+
+                            <div class="seminar__date">
+                                <p>2021/12/30</p>
+                            </div>
+                        </div>
+
+                        <div class="seminar__content">
+                            <a href="#"> 【講師主催】ハンドセラピス体験セミナー（沖縄/那覇市）</a>
+                        </div>
+                    </div>
+
+                    <!-- Third Col -->
+                    <div class="col-md-4">
+                        <div class="seminar__wrapper">
+                            <a class="seminar__img" href="#">
+                                <img src="./src/assets/img/seminar/seminar-img3.png" alt="treatment-img"
+                                    class="img-fluid" loading="lazy" height="664" width="490">
+                            </a>
+
+                            <div class="seminar__date">
+                                <p>2021/12/30</p>
+                            </div>
+                        </div>
+
+                        <div class="seminar__content">
+                            <a href="#"> 【講師主催】ハンドセラピス体験セミナー（沖縄/那覇市）</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Customer Section  -->
+        <section class="customer">
+            <div class="container bb-one">
+                <h2 class="heading-ttl">
+                    <span class="heading-en">Customer's voice</span>
+                    <span class="heading-jp">お客様の声</span>
+                </h2>
+
+
+                <div class="row justify-content-center customer__wrapper">
+                    <div class="customer__feedback">
+                        <p>
+                            雨にも負けず風にも負けず雪にも夏の暑さにも負けぬ丈夫なからだを持ち欲は無く決して瞋からず何時も静かに笑っている一日に玄米四合と味噌と少しの野菜を食べ
+                        </p>
+                    </div>
+
+                    <div class="customer__feedback">
+                        <p>
+                            雨にも負けず風にも負けず雪にも夏の暑さにも負けぬ丈夫なからだを持ち欲は無く決して瞋からず何時も静かに笑っている一日に玄米四合と味噌と少しの野菜を食べ
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="social">
+            <div class="container">
+                <div class="social__wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 social__line">
+
+                            <div class="social__heading">
+                                <h2 class="heading-small">
+                                    <span class="heading-one -up">Line</span>
+                                    <span class="heading-two">友だち追加</span>
+                                </h2>
+                            </div>
+
+                            <div class="social__image">
+                                <img src="./src/assets/img/social/line.png" alt="" height="200" width="200"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-6 social__instagram">
+                            <div class="social__heading">
+                                <h2 class="heading-small">
+                                    <span class="heading-one">Instagram</span>
+                                    <span class="heading-two">@pono.style</span>
+                                </h2>
+                            </div>
+
+                            <div class="social__images">
+                                <div class="row justify-content-center gap-10">
+                                    <div>
+                                        <img class="insta-img" src="./src/assets/img/social/box1.png" alt="insta-img"
+                                            loading="lazy" height="200" width="200">
+                                    </div>
+
+                                    <div>
+                                        <img class="insta-img" src="./src/assets/img/social/box1.png" alt="insta-img"
+                                            loading="lazy" height="200" width="200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCESS SECTION  -->
+        <section class="access" id="access">
+            <div class="container">
+                <div class="access__heading">
+                    <h2 class="heading-small">
+                        <span class="heading-one">Access</span>
+                        <span class="heading-two">アクセス</span>
+                    </h2>
+                </div>
+
+
+                <div class="access__map">
+                    <div style="width: 100%">
+                        <iframe class="map" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.57572214492!2d127.73297821503154!3d26.27543008340624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56cbca536f4ff%3A0xe7fd786bec5f4816!2z44CSOTAxLTIyMjQg5rKW57iE55yM5a6c6YeO5rm-5biC55yf5b-X5Zac77yT5LiB55uu77yR77yX4oiS77yR77yS!5e0!3m2!1sja!2sjp!4v1639558036721!5m2!1sja!2sjp"
+                            width="100%" height="340" frameborder="0"><a
+                                href="https://www.gps.ie/car-satnav-gps/"></a></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+
+        <!-- SCROLL-TO-TOP -->
+        <a href="#" class="scroll-to-top" id="js-scrollToTop">
+            <img src="./src/assets/img/arrow-top.svg" alt="トップに" class="img-fluid">
+        </a>
+
+        <div class="footer__copyright">
+            <div class="container">
+                <a href="#" class="footer__link"> 会員情報変更 </a>
+                <a href="#" class="footer__link">会員解約</a>
+                <br class="d-md-block">
+                <a href="#" class="footer__link"> 資料請求</a>
+                <a href="#" class="footer__link"> よくあるご質問</a><br class="d-md-block">
+                <a href="#" class="footer__link"> ご利用規約</a>
+
+                <a href="#" class="footer__link"> プライバシーポリシー</a>
+                <a href="#" class="footer__link"> 運営会社</a>
+                <p class="footer__text"> © 2021 Pono All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="@@webRoot/assets/js/app.js"></script>
+
+</body>
+
+</html>
